@@ -2,7 +2,7 @@
   --clr-neon: hsl(317 100% 54%);
   --clr-bg: hsl(323 21% 16%);
   --transition-lenta: 200ms;
-  --tamaño: 7em;
+  --tamaño: 2em;
 }
 
 *,
@@ -14,11 +14,12 @@
 body {
   min-height: 100vh;
   display: grid;
+  justify-content: center;
   place-items: center;
   background: var(--clr-bg);
   font-family: "Zen Dots", cursive;
   color: var(--clr-neon);
-  padding-right: 10rem;
+  padding-right: 2rem;
 }
 
 .boton-neon {
@@ -81,4 +82,20 @@ body {
 .boton-neon:hover:focus,
 .boton-neon:hover::after {
   opacity: 1;
+}
+
+@media screen and (min-width: 400px) {
+  :root {
+    --tamaño: 3em;
+  }
+}
+@media screen and (min-width: 550px) {
+  :root {
+    --tamaño: 4em;
+  }
+}
+@media screen and (min-width: 850px) {
+  :root {
+    --tamaño: 6em;
+  }
 }
